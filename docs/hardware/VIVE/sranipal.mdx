@@ -58,6 +58,11 @@ tens to hundreds of **gigabytes** if left unchecked.
 Until this is resolved, we recommend using older versions of SRanipal if possible.
 :::
 
+:::info
+It is possible to create a symbolic link from the log file to nul to stop the size build up of the log file by discarding the data before it's written to the disk
+First delete the Vive_VBS.log at (``"C:\Users\yourusername\AppData\LocalLow\HTC Corporation\SR_logs\SRAnipal_Logs"``) file then in CMD with Administrator priviledges run (``mklink "C:\Users\yourusername\AppData\LocalLow\HTC Corporation\SR_logs\SRAnipal_Logs\Vive_VBS.log" nul:``) there now should be a symoblic link in (``...\SRAnipal_Logs``)
+:::
+
 The recommended version to use as of now (January 2024):
 
 - If you aren't using a Focus 3 or XR Elite, you should use the [v1.3.1.1 installer](#installing-via-v1311-installer)
